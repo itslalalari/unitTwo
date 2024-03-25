@@ -37,7 +37,7 @@ class Monster{
 
     let action = ["as you robbed a bank.",
                   "while fleeing town in the same direction.", 
-                  "when you made eye coontact from accross a crowded bar.",
+                  "when you made eye contact from accross a crowded bar.",
                   "at a niche movie screening.",
                   "while bathing in a river."];
     let r = randomNum(); //gets random number for the realtionship
