@@ -18,14 +18,13 @@ class Monster{
 };
 
 //create arrays and variables
-
     let attack = ["Slash", "Bite", "Stomp", "Hit", "Gouge"];
     let a = randomNum(); //gets a number for the attack array 
 
     let type = ["Cat", "Dog", "Bird", "Lizard", "Behemoth"];
     let t = randomNum(); //gets a number for the type array
 
-    let friendly = ["Yes, this monster is friendly towards you", 
+    let friendly = ["Yes, this monster is friendly towards you.", 
                      "No, this monster is not really friendly at all.", 
                      "It is undetermined as of yet if this monster is actually friendly.",
                      "Reluctantly.", 
@@ -33,32 +32,39 @@ class Monster{
     let f = randomNum(); //gets a number for the freiendly array
 
     let defence = ["Speed", "Stelth", "Size", "Cunning", "Cuteness" ];
-    let d = randomNum(); 
+    let d = randomNum(); //gets a number for the defence array
 
-    //button that performes random number assignments
-var TravelingCompanion = new Monster("Traveling Companion");
+    let action = ["as you robbed a bank.",
+                  "while fleeing town in the same direction.", 
+                  "when you made eye from accross a crowded bar.",
+                  "at a niche movie screening.",
+                  "while bathing in a river."];
+    let r = randomNum(); //gets random number for the realtionship
+    relationship = action[r];
 
-console.log(TravelingCompanion);
+var creature = new Monster(); //creates monster
 
-document.getElementById("m1").innerHTML = TravelingCompanion;
+creature.relationship = action[r]; //gives param a value
+    
 
-    let outputAttack = attack[a];
-    let outputType=type[t];
-    let outputFriendly=friendly[f];
-    let outputDefence=defence[d];
+console.log(creature);
+
+
+//Set 
+let outputAttack = attack[a];
+let outputType=type[t];
+let outputFriendly=friendly[f];
+let outputDefence=defence[d];
     
  console.log(a);
  console.log(t);
  console.log(f);
  console.log(d);
 
-
-
-/*
-document.getElementById("m1").innerHTML = "This Monster's main attack is to " + outputAttack;
-document.getElementById("m2").innerHTML = "Your traveling companion is a " + outputType;
-document.getElementById("m3").innerHTML = "This Monster's main attack is to " + outputAttack;
-document.getElementById("m4").innerHTML = "This Monster's main attack is to " + outputAttack;*/
+document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack + ".";
+document.getElementById("m2").innerHTML = "This monster is a " + outputType + ".";
+document.getElementById("m3").innerHTML = "Is this monster friendly? " +outputFriendly;
+document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence + ".";
+document.getElementById("m5").innerHTML = "You met this monster  " + creature.relationship;
    
 });
-//Place that shows the stats of the new Monster
