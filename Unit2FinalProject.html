@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title> Larissa's CIS 196 Unit 2 Project</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script> <!--for jquery bit at top of page-->
+<script src="unit2FinalProject2.js"></script>
+
+</head>
+
+<body>
+    <h1>Unit 2 CIS 196 Project- Spring 2024.</h1>
+    <div id="div1">
+        <p id="p2">CLICK HERE (x2)</p>
+        <p id="p1">Watch Me as I Disappear</p>
+        <p id = "p3"> </p>
+        </div>
+
+        <div id="Monster">
+            <p><h2>Monster Creater: click the button below to reveal your monster's stats</h2></p>
+            <p id="m1"></p>
+            <p id="m2"></p>
+            <p id="m3"></p>
+            <p id="m4"></p>
+
+    <button id="btnRefresh" type="button">
+    Create A New Monster
+    </button>
+            
+ <script>
+  const refreshBtn = document.getElementById("btnRefresh");
+
+    function handleClick() {
+    window.location.reload();
+    };
+
+    refreshBtn.addEventListener("click", handleClick);
+
+ //<button onclick="handleClick();">Create Monster</button>   
+ </script>
+
+        </div>
+</body>
