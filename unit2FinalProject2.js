@@ -14,9 +14,8 @@ $(document).ready(function(){
 class Monster{
     constructor(relationship){
         this.relationship = relationship;
-        
+
     };  
-    
 };
 
 //create arrays and variables
@@ -48,22 +47,23 @@ var creature = new Monster(); //creates monster
 
 creature.relationship = action[r]; //gives param a value from the array
     
-//Set 
+//Set random array selection to a var
 let outputAttack = attack[a];
 let outputType=type[t];
 let outputFriendly=friendly[f];
 let outputDefence=defence[d];
-    
+ 
+//log variables to check that random number generator is working
  console.log(a);
  console.log(t);
  console.log(f);
  console.log(d);
  console.log(r);
 
-document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack + ".";
-document.getElementById("m2").innerHTML = "This monster is a " + outputType + ".";
+document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack.toLowerCase() + ".";
+document.getElementById("m2").innerHTML = "This monster is a " + outputType.toLowerCase() + ".";
 document.getElementById("m3").innerHTML = "Is this monster friendly? " +outputFriendly;
-document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence + ".";
+document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence.toLowerCase() + ".";
 document.getElementById("m5").innerHTML = "You met this monster  " + creature.relationship; //method that calls object
    
 });
