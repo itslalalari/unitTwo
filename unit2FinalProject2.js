@@ -32,7 +32,7 @@ class Monster{
                      "Only while it remains a convenience."];
     let f = randomNum(); //gets a number for the freiendly array
 
-    let defence = ["Speed", "Stelth", "Size", "Cunning", "Cuteness" ];
+    let defence = ["Speed", "Stealth", "Size", "Cunning", "Cuteness" ];
     let d = randomNum(); //gets a number for the defence array
 
     let action = ["as you robbed a bank.",
@@ -64,7 +64,7 @@ document.getElementById("m1").innerHTML = "This monster's main attack is to " + 
 
 document.getElementById("m2").innerHTML = "This monster is a " + outputType.toLowerCase() + ".";
 document.getElementById("m3").innerHTML = "Is this monster friendly? " +outputFriendly;
-document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence.toLowerCase() + ".";
+document.getElementById("m4").innerHTML = "This monster's main defence is its " + outputDefence.toLowerCase() + ".";
 document.getElementById("m5").innerHTML = "You met this monster  " + creature.relationship; //method that calls object
    
 });
