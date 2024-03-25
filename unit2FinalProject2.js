@@ -60,7 +60,8 @@ let outputDefence=defence[d];
  console.log(d);
  console.log(r);
 
-document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack.toLowerCase() + ".";
+document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack.toLowerCase() + "."; //.tolowercase is a method
+
 document.getElementById("m2").innerHTML = "This monster is a " + outputType.toLowerCase() + ".";
 document.getElementById("m3").innerHTML = "Is this monster friendly? " +outputFriendly;
 document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence.toLowerCase() + ".";
