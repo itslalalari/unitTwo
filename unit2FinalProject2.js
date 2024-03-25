@@ -14,7 +14,9 @@ $(document).ready(function(){
 class Monster{
     constructor(relationship){
         this.relationship = relationship;
-    };   
+        
+    };  
+    
 };
 
 //create arrays and variables
@@ -36,7 +38,7 @@ class Monster{
 
     let action = ["as you robbed a bank.",
                   "while fleeing town in the same direction.", 
-                  "when you made eye from accross a crowded bar.",
+                  "when you made eye coontact from accross a crowded bar.",
                   "at a niche movie screening.",
                   "while bathing in a river."];
     let r = randomNum(); //gets random number for the realtionship
@@ -44,12 +46,8 @@ class Monster{
 
 var creature = new Monster(); //creates monster
 
-creature.relationship = action[r]; //gives param a value
+creature.relationship = action[r]; //gives param a value from the array
     
-
-console.log(creature);
-
-
 //Set 
 let outputAttack = attack[a];
 let outputType=type[t];
@@ -60,11 +58,12 @@ let outputDefence=defence[d];
  console.log(t);
  console.log(f);
  console.log(d);
+ console.log(r);
 
 document.getElementById("m1").innerHTML = "This monster's main attack is to " + outputAttack + ".";
 document.getElementById("m2").innerHTML = "This monster is a " + outputType + ".";
 document.getElementById("m3").innerHTML = "Is this monster friendly? " +outputFriendly;
 document.getElementById("m4").innerHTML = "This monster's main defencse is its " + outputDefence + ".";
-document.getElementById("m5").innerHTML = "You met this monster  " + creature.relationship;
+document.getElementById("m5").innerHTML = "You met this monster  " + creature.relationship; //method that calls object
    
 });
